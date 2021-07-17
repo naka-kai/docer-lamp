@@ -25,6 +25,7 @@ services:
     build: ./php
     volumes:
       - "./phpmyadmin/sessions:/sessions"
+      - "./html:/var/www/html"
     ports:
       - 8080:80
     depends_on:
